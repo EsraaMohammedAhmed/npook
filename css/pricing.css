@@ -1,0 +1,105 @@
+.pricing-plans {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
+.pricing-item {
+    width: 30%;
+    padding: 30px 15px;
+ 
+    background: linear-gradient(145deg, #2e2e2e, #232323); /* Gradient background */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 4px 4px 12px #000; /* Subtle shadow for depth */
+    transition: transform 0.3s;
+}
+
+.pricing-item:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.pricing-item-text {
+    text-transform: uppercase;
+    font-size: 1.5em; /* Slightly larger font size */
+    color:#F22361; /* Change text color to match border */
+}
+
+.pricing-item-permonth {
+    width: 100px;
+    height: 100px;
+    padding: 12px 0;
+    margin: 20px auto;
+    border: 4px solid #F22361; /* Match with overall theme */
+    border-radius: 50%;
+    background-color: #F6F8FA; /* Light background for price display */
+}
+
+.doller {
+    font-size: 50px;
+    color: #F22361; /* Bold price color */
+}
+
+.month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff; /* Keep this white for contrast */
+}
+
+.pricing-list {
+    list-style: none;
+}
+
+.pricing-item-purchase {
+    border: 2px solid   #1F1F1F;;
+    background-color: #F22361; /* Purchase button color */
+    display: block;
+    width: 120px;
+    margin: 15px auto;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 0;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.pricing-item.mg {
+    margin: 0 2%; /* Use smaller margins for a uniform look */
+}
+
+.pricing-list li {
+    color: #ffffff; /* White for text clarity */
+    line-height: 1.8;
+}
+
+.pricing-item {
+    position: relative;
+}
+
+.pricing-item:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(242, 35, 97, 0.8); /* More transparent overlay */
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.pricing-item:hover:after {
+    height: 100%;
+}
+
+.pricing-item:hover .pricing-item-text {
+    color: #FFD700; /* Gold on hover for text */
+}
+
+.pricing-item:hover .pricing-item-permonth {
+    color: #1F1F1F;; /* Change to match theme */
+    transition: 1s;
+}
